@@ -16,7 +16,7 @@
 1. Clone the repository to your local machine.
 2. Install the required Python libraries using the following command:
 
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
@@ -43,7 +43,7 @@ Ensure your Notion database has these columns:
 
 To run the update process, execute the `run.py` script:
 
-    ```bash
+    ```
     python run.py
     ```
 
@@ -60,6 +60,12 @@ You'll be prompted to input your Notion Database ID, after which:
 
 ## Custom Styling with CSS for Notion Pages 🎨
 
+This repository includes a custom CSS file `style.css` that can be used with Super.so to style a Notion page to look similar to the XR Landscape Austria page at [xr-austria.org](https://xr-austria.org/).
+
+<p align="center">
+  <img src="https://assets.super.so/d8fa3248-0b58-4287-a142-d579e10bbd53/uploads/cover/7f5853bc-3fde-48b2-971f-f8a7394856c7.png" alt="Image" width="400">
+</p>
+
 Included is a `style.css` file to style Notion pages in the flair of the XR Landscape Austria page.
 
 ### How to Apply the Custom CSS in Super.so
@@ -70,10 +76,6 @@ Included is a `style.css` file to style Notion pages in the flair of the XR Land
 4. Copy `style.css` contents from this repo.
 5. Paste into **Custom CSS** box in Super.so settings.
 6. Save changes to see your stylish Notion page!
-
-### Social Share Image for XR Landscape Austria
-
-![XR Landscape Austria Social Share Image](https://xr-austria.org/social-share.jpg)
 
 ## Contributing 🤝
 
