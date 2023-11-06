@@ -1,0 +1,162 @@
+/* Navbar Itevm */
+
+.navbar-default { margin : 0 !important; }
+
+/* Gallery and Cards */
+
+.notion-collection-gallery {
+    border-top: none !important;
+    border: 10px !important;
+    padding: 20px !important;
+    grid-gap: 20px !important;
+    row-gap: 25px !important;
+}
+.notion-collection-card {
+    padding: 10px;
+    position: relative;
+    background: none !important;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;  /* Makes content stack vertically */
+}
+
+.notion-collection-card__cover img {
+    border-radius: 0;
+    height: 100%;
+}
+
+.notion-collection-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.notion-collection-card div a {
+    border-bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Additional Styling for hover */
+.notion-collection-card:hover {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 20px 16px 48px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow 1.9s ease;
+}
+
+.notion-collection-card:hover > .notion-collection-card__cover {
+    opacity: 0.8;
+}
+
+.notion-property-text,
+.notion-semantic-string.link {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.notion-collection-gallery {
+    border-top: none !important;
+    border: none !important;
+    padding: 20px 20px 20px 20px !important;
+    grid-gap: 20px !important;
+    row-gap: 25px !important;
+}
+
+.notion-collection-card {
+    padding: 10px;
+    position: relative;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.notion-collection-card__cover img {
+    border-radius: 0;
+    height: 100%;
+}
+
+.notion-collection-card.gallery .notion-property__title, .notion-collection-card__property, .notion-collection-card__content {
+    padding: 0;
+}
+
+.gallery .notion-collection-card__property .notion-semantic-string {
+    white-space: normal;
+}
+
+.notion-collection-card__cover.contain > span > img {
+    padding: 0px 32px !important;
+}
+
+.notion-collection-card > a::after {
+    content: '';
+    position: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.notion-collection-card div a {
+    position: center;
+    z-index: 11;
+    border-bottom: 0;
+}
+
+.notion-collection-card .notion-semantic-string .link {
+    border-bottom: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ .notion-collection-card {
+    background: none;
+    border-radius: 16px;
+    transition: box-shadow 0.8s ease;
+}
+
+ .notion-collection-card:hover > .notion-collection-card__cover {
+    opacity: 0.1;
+    position: center;
+}
+
+ .notion-collection-card:hover {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 20px 16px 48px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow 1.9s ease;
+}
+
+
+ .notion-collection-card > .notion-collection-card__content {
+    display: none;
+}
+
+ .notion-collection-card:hover > .notion-collection-card__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    color: #000;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ .notion-property-text,
+ .notion-semantic-string.link {
+    text-align: center;
+    width: 100%;
+}
