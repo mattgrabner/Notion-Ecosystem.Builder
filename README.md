@@ -1,17 +1,17 @@
-# Company Ecosystem Landscape Updater
+# 🌐 Company Ecosystem Landscape Updater
 
-## Overview
+## Overview 📜
 
-This suite of scripts is designed to automate the process of creating a landscape of company ecosystems. It updates a Notion database with detailed company descriptions, extracted from a collection of URLs, and generates concise summaries using OpenAI's GPT model. The system works by scraping web content, summarizing it, and then populating a Notion database with the relevant information.
+🚀 This suite of scripts is designed to automate the process of creating a landscape of company ecosystems. It updates a Notion database with detailed company descriptions, extracted from a collection of URLs, and generates concise summaries using OpenAI's GPT model. The system works by scraping web content, summarizing it, and then populating a Notion database with the relevant information.
 
-## Requirements
+## Requirements 📋
 
 - Python 3.x
 - Pip (Python package installer)
 - Notion account and integration token
 - OpenAI account and API key
 
-## Installation
+## Installation 🔧
 
 1. Clone the repository to your local machine.
 2. Install the required Python libraries using the following command:
@@ -28,9 +28,9 @@ This suite of scripts is designed to automate the process of creating a landscap
     OPENAI_API_KEY=your_openai_api_key_here
     ```
 
-## Notion Database Setup
+## Notion Database Setup 🗃️
 
-Your Notion database should have the following columns for the scripts to function properly:
+Ensure your Notion database has these columns:
 
 - `URL`: containing URLs to scrape content from
 - `Description`: where the scraped content will be stored
@@ -39,33 +39,48 @@ Your Notion database should have the following columns for the scripts to functi
 - `Category`: the category of the company
 - `Active`: indicating whether the company is active or not
 
-## Usage
+## Usage 🛠️
 
-To run the update process, execute the `run.py` script as follows:
+To run the update process, execute the `run.py` script:
 
     ```bash
     python run.py
     ```
 
-You will be prompted to input your Notion Database ID. The script will then proceed to:
+You'll be prompted to input your Notion Database ID, after which:
 
-- Scrape content from the URLs specified in the `URL` column of your Notion database.
-- Update the `Description` column with the scraped content.
-- Generate short summaries using OpenAI's GPT and update the `Summary` column.
+- Scrape content from the URLs in the `URL` column.
+- Update the `Description` with the scraped content.
+- Generate summaries using OpenAI's GPT for the `Summary` column.
 
-Please note that the `Summary` column will be updated only if it's empty and the company is marked as 'Active'.
+## Important Notes 📝
 
-## Important Notes
+- Ensure Notion API token access.
+- Keep your API keys secure.
 
-- Make sure your Notion API token has access to the database you want to update.
-- Always keep your API keys secure and do not share your `.env` file.
+## Custom Styling with CSS for Notion Pages 🎨
 
-## Contributing
+Included is a `style.css` file to style Notion pages in the flair of the XR Landscape Austria page.
 
-Feel free to fork this repository and submit pull requests to contribute to the development of this project.
+### How to Apply the Custom CSS in Super.so
 
-## License
+1. Sign up or log in at [Super.so](https://super.so/).
+2. Link your Notion page and create a site.
+3. In Super.so site settings, locate the **Custom Code** section.
+4. Copy `style.css` contents from this repo.
+5. Paste into **Custom CSS** box in Super.so settings.
+6. Save changes to see your stylish Notion page!
 
-This project is licensed under the MIT License.
+### Social Share Image for XR Landscape Austria
 
-Remember to replace placeholder texts like `your_notion_api_key_here` and `your_openai_api_key_here` with the actual API keys, and ensure your `.env` file is included in your `.gitignore` to prevent it from being pushed to any public repositories. 
+![XR Landscape Austria Social Share Image](https://xr-austria.org/social-share.jpg)
+
+## Contributing 🤝
+
+👥 Contributions are welcome! Fork this repo and submit PRs to help improve the project.
+
+## License 📄
+
+This project is under the MIT License.
+
+> 🚨 Replace placeholders like `your_notion_api_key_here` with actual keys and exclude `.env` from public repos.
